@@ -1,0 +1,7 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: reminder_rails_test
+  pool: 5
+  username: USERNAME
+  password:
