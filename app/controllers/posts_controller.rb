@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!
+  #before_filter :authenticate_user!
 
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.where(user_id: current_user.id)
+    @posts = Post.where(user_id: 1)
   end
 
   # GET /posts/1
@@ -26,7 +27,9 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @post.user_id = current_user.id
+    #@post.user_id = current_user.id
+    @post.user_id = 1
+
 
     respond_to do |format|
       if @post.save
