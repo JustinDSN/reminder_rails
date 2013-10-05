@@ -9,4 +9,4 @@ script:
   - bundle exec rspec
 before_script:
   - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database reminder_test' -U postgres
+  - psql -c 'create database reminder_rails_test' -U postgres
