@@ -3,5 +3,5 @@ test:
   encoding: unicode
   database: reminder_rails_test
   pool: 5
-  username: USERNAME
+  username: postgres
   password:
