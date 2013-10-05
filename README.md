@@ -8,3 +8,6 @@
 cp config/database.yml.example config/database.yml
 sed -i '' 's/*YOUR USERNAME*/${whoami}/g' config/database.yml
 ```
+
+
+[![Build Status](https://travis-ci.org/JustinDSN/reminder_rails.png)](https://travis-ci.org/JustinDSN/reminder_rails)
