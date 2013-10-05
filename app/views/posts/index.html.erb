@@ -1,10 +1,12 @@
-<h1>Listing posts</h1>
+<h1>Previous Posts</h1>
 
 <table>
   <thead>
     <tr>
       <th>Feeling</th>
       <th>Functioning</th>
+      <th>Activity</th>
+      <th>Notes</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +18,8 @@
       <tr>
         <td><%= post.feeling %></td>
         <td><%= post.functioning %></td>
+        <td><%= post.activity_id %></td>
+        <td><%= post.notes %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
