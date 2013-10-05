@@ -23,6 +23,14 @@
 
   <body>
 
+<% if user_signed_in? %>
+<div class="row">
+  <div class="large-3 columns">
+    <%= link_to("Logout", destroy_user_session_path, :method => :delete) %>
+  </div>
+</div>
+<% end %>
+
 <div class="row">
   <div class="large-3 columns"></div>
   <div class="large-6 columns">
