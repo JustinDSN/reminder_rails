@@ -45,6 +45,8 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'devise'
+gem 'zurb-foundation'
+
 
 group :test do
   gem 'rspec-rails'
