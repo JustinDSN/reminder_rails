@@ -44,7 +44,11 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'devise'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'launchy'
+  gem 'database_cleaner'
 end
