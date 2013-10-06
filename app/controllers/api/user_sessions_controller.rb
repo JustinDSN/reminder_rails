@@ -1,6 +1,7 @@
 module Api
 
   class UserSessionsController < ApplicationController
+    skip_before_filter :verify_authenticity_token
 
     def create
       user = authenticate_user_from_credentials
