@@ -9,6 +9,10 @@ ReminderRails::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
+  namespace :api do
+    post 'user_sessions' => 'user_sessions#create'
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
